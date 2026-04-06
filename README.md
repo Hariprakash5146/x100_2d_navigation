@@ -107,18 +107,21 @@ ros2 launch x100_gazebo x100_empty_world.launch.py
 ```
 
 Launch SLAM only:
+<img width="1920" height="1080" alt="Screenshot from 2026-04-06 18-53-30" src="https://github.com/user-attachments/assets/5cb4815d-288f-41fb-b419-0ad52c78d7ac" />
 
 ```bash
 ros2 launch x100_gazebo online_async.launch.py use_sim_time:=true
 ```
 
 Launch RViz display:
+<img width="1920" height="1080" alt="Screenshot from 2026-04-06 18-56-32" src="https://github.com/user-attachments/assets/232481c2-9155-4105-beac-fd03d4540284" />
 
 ```bash
 ros2 launch x100_gazebo display.launch.py use_sim_time:=true rviz_config:=/home/$USER/x100_ws/viz.rviz
 ```
 
 Launch combined world + SLAM + RViz:
+
 
 ```bash
 ros2 launch x100_gazebo navigation_slam_online_async.launch.py use_sim_time:=true
@@ -138,7 +141,7 @@ After mapping is complete:
 cd ~/x100_ws
 ros2 run nav2_map_server map_saver_cli -f map
 ```
-
+<img width="1920" height="1080" alt="Screenshot from 2026-04-06 19-00-12" src="https://github.com/user-attachments/assets/25e736ae-d97e-450c-ab81-1db9d2cc7a76" />
 This generates `map.yaml` and `map.pgm` in the current directory.
 
 ## Notes

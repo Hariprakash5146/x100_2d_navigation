@@ -100,6 +100,7 @@ source install/setup.bash
 ```
 
 Launch Gazebo world:
+<img width="1920" height="1080" alt="Screenshot from 2026-04-06 18-52-39" src="https://github.com/user-attachments/assets/0ae32d53-5c06-492d-b25a-742e34e5fca4" />
 
 ```bash
 ros2 launch x100_gazebo x100_empty_world.launch.py

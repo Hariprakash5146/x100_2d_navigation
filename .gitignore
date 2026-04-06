@@ -1,0 +1,14 @@
+# ROS2
+build/
+install/
+log/
+
+# VS Code
+.vscode/
+
+# Python
+__pycache__/
+*.pyc
+
+# Maps (optional large files)
+*.db

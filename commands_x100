@@ -1,0 +1,29 @@
+# launch the world 
+cd x100_ws 
+ros2 launch x100_gazebo x100_gazebo_world.launch.py 
+
+
+#launch online async for the slam 
+cd x100_ws 
+ros2 launch x100_gazebo online_async.launch.py 
+
+#launnch teleop twist keyboard 
+ros2 run teleop_twist_keyboard teleop_twist_keyboard
+
+#launch rviz 
+cd x100_ws
+ros2 launch x100_gazebo diaplay.launch,py 
+
+#launch navigation 
+cd x100_ws
+ros2 launch x100_gazebo nacigation.launch.py 
+
+#save the map 
+
+ros2 run nav2_map_server map_saver_cli -f ~/x100_ws/map 
+
+#bringup for rviz navigation point 
+
+ros2 launch nav2_bringup rviz_launch.py
+
+

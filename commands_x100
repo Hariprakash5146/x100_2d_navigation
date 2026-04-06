@@ -12,11 +12,11 @@ ros2 run teleop_twist_keyboard teleop_twist_keyboard
 
 #launch rviz 
 cd x100_ws
-ros2 launch x100_gazebo diaplay.launch,py 
+ros2 launch x100_gazebo display.launch,py 
 
 #launch navigation 
 cd x100_ws
-ros2 launch x100_gazebo nacigation.launch.py 
+ros2 launch x100_gazebo navigation.launch.py 
 
 #save the map 
 
